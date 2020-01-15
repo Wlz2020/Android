@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".TestActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/black" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="500dp"
+            android:text="销售报表"
+            android:textSize="40dp" />
+
+    </TableRow>
+
+    <TableRow android:layout_weight="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow
+                    android:id="@+id/tab1"
+                    android:layout_width="642dp"
+                    android:layout_height="149dp"
+                    android:background="@android:color/holo_blue_bright"
+                    tools:layout_editor_absoluteX="-18dp"
+                    tools:layout_editor_absoluteY="64dp" />
+
+                <TableRow
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@android:color/holo_green_light"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="237dp" />
+
+                <TableRow
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@android:color/holo_orange_light"
+
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="630dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="851dp"
+                    android:layout_height="822dp"
+                    android:layout_gravity="center"
+                    android:text="销售报表"
+
+                    tools:layout_editor_absoluteX="-16dp"
+                    tools:layout_editor_absoluteY="6dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>
